@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .error {
+        color: red;
+        font-size: 12px;
+        display: none;
+    }
+    .delete {
+            margin-left: 10px;
+            color: white;
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        li{
+            margin-bottom: 5px;
+        }
+    
+        </style>
+</head>
+<body>
+        <div>
+            <label for="addInput">Enter a New Item</label>
+            <input type="text" name="addInput" id="addInput">
+            <span class="error">Please Write The Item Name</span>
+            <button id="addButton" onclick="AddItemToList()">Add Item</button>
+
+            <ul class="listItems">
+
+            </ul>
+        </div>
+
+        <script src="./ShopingList.js"></script>
+</body>
+</html>

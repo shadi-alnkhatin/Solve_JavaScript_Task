@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .error {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validateForm()">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <span id="nameError" class="error"></span>
+        </div>
+    
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <span id="emailError" class="error"></span>
+        </div>
+    
+        <button type="submit" id="submit" >Submit</button>
+    </form>
+    <script src="./Q6.js"></script>    
+</body>
+</html>
