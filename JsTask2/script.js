@@ -134,3 +134,38 @@ if (Array.isArray(list)) {
 }
 
 
+function findSmallest(arr) {
+
+    return Math.min(...arr)
+
+}
+console.log(findSmallest([30, 45, 60, 7]), "|Q1");
+
+
+
+function AlphabeticalOrder(str) {
+
+    let reverse = "";
+    for (let i = str.length - 1; i >= 0; i--) {
+        reverse += str[i];
+
+    }
+    return reverse;
+}
+
+console.log(AlphabeticalOrder("hello"), "|Q2");
+
+
+
+
+
+function doubleChar(str1) {
+    let doubleChar = ("");
+    for (let i = 0; i < str1.length; i++) {
+        doubleChar += str1[i] + str1[i];
+    }
+    return doubleChar;
+}
+console.log(doubleChar("Coding"), "|Q5");
+
+
